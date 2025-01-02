@@ -1,0 +1,131 @@
+.jumbotron {
+    padding-top: 6rem;
+background-color: white;
+}
+.container-fluid {
+    background-color: #fbf8c1;
+}
+section {
+    padding-top: 5rem;
+}
+
+/*** awal animasi ***/
+svg#freepik_stories-high-school:not(.animated) .animable {opacity: 0;}
+svg#freepik_stories-high-school.animated #freepik--Floor--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+zoomIn;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--Clouds--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+lightSpeedRight;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--high-school-building--inject-160 
+{animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) 
+slideUp;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--Trees--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+slideRight;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--Plants--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+fadeIn;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--character-4--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+slideDown;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--character-3--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+slideDown;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--character-2--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38)
+slideDown;animation-delay: 0s;}
+svg#freepik_stories-high-school.animated #freepik--character-1--inject-160 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) 
+zoomIn;animation-delay: 0s;}
+
+@keyframes zoomIn {
+0% {
+opacity: 0;
+transform: scale(0.5);}
+100% {
+opacity: 1;
+transform: scale(1);}}
+@keyframes lightSpeedRight {
+from {transform: translate3d(50%, 0, 0) skewX(-20deg);
+opacity: 0;}
+60% {transform: skewX(10deg);
+opacity: 1;}
+80% {transform: skewX(-2deg);}
+to {opacity: 1;
+transform: translate3d(0, 0, 0);}}
+@keyframes slideUp {
+0% {opacity: 0;
+transform: translateY(30px);}
+100% {
+opacity: 1;
+transform: inherit;}}
+@keyframes slideRight {
+0% {
+opacity: 0;
+transform: translateX(30px);}
+100% {
+opacity: 1;
+transform: translateX(0);}}
+@keyframes fadeIn {
+0% {
+opacity: 0;}
+100% {
+opacity: 1;}}
+@keyframes slideDown {
+0% {opacity: 0;
+transform: translateY(-30px);}
+100% {opacity: 1;
+transform: translateY(0);}}
+
+/*** akhir animasi ***/
+
+/*** Blog Start ***/
+.blog-item .blog-btn {
+    z-index: 2;
+}
+
+.blog-btn .blog-btn-icon {
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-btn-icon .blog-icon-2 {
+    display: flex;
+    position: absolute;
+    top: 6px;
+    left: -140px;
+    
+}
+
+.blog-btn-icon:hover .blog-icon-2 {
+    transition: 1s;
+    left: 5px;
+    top: 6px;
+    padding-bottom: 5px;
+}
+.blog-icon-1 {
+    position: relative;
+    top: -4px;
+}
+.blog-btn-icon:hover .blog-icon-1 {
+    top: 0;
+    right: -140px;
+    transition: 1s;
+}
+
+/*** Blog End ***/
+
+/*** Footer Start ***/
+
+.footer .short-link a,
+.footer .help-link a,
+.footer .contact-link a {
+    transition: .5s;
+}
+
+.footer .short-link a:hover,
+.footer .help-link a:hover,
+.footer .contact-link a:hover {
+    letter-spacing: 1px;
+}
+
+.footer .hightech-link a:hover {
+    background: var(--bs-secondary);
+    border: 0;
+}
+
+/*** Footer End ***/
